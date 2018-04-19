@@ -1,60 +1,43 @@
 ---
-title: Vejle Idrætshøjskoles Kursuscenter
-layout: default
+title: Urban
 ---
 
-<div class="content">
-    
-<div class="panel-display boxton clearfix radix-boxton" id="page-page">
+<section class="hero diagonal">
+	<div class="container">
+		<h2 class="editable">We build websites</h2>
+		<p class="subtext editable">This is the <strong>Urban</strong> template from <a href="http://cloudcannon.com/">CloudCannon</a>. Urban is a strong foundation for the web presence of your agency.</p>
+		<p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p>
+	</div>
+</section>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 radix-layouts-content panel-panel">
-        <div class="panel-panel-inner">
-          <div class="panel-pane pane-node-links link-wrapper"  >
-  
-      
-  
-  <div class="pane-content">
-      </div>
+<section class="diagonal patterned">
+	<div class="container halves">
+		<div>
+			<h3 class="editable">Some of our work</h3>
+			<p class="editable">We take pride in our previous work and our happy customers. We cater to any sector to boost business and increase exposure.</p>
+			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">View Full Portfolio &rarr;</a></p>
+		</div>
+		<div>
+			<ul class="image-grid">
+				{% for client in site.clients limit: 4 %}
+					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
 
-  
-  </div>
-<div class="panel-pane pane-entity-field pane-node-field-featured-image"  >
-  
-      
-  
-  <div class="pane-content">
-    <div class="field field-name-field-featured-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="content/vejle-idr%c3%a6tsh%c3%b8jskoles-kursuscenter.html" class="active"><img class="panopoly-image-half" typeof="foaf:Image" src="sites/kursuscenter.vih.dk/files/styles/panopoly_image_half/public/globenkursuscenter454b.jpg?itok=yMM9jdC8" alt="Vejle Idrætshøjskoles Kursuscenter" /></a></div></div></div>  </div>
-
-  
-  </div>
-<div class="panel-pane pane-entity-field pane-node-body"  >
-  
-      
-  
-  <div class="pane-content">
-    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Vejle Idrætshøjskoles kursuscenter er klar til at danne rammerne om dit næste møde, kursus, træningslejr, event eller teambuildingarrangment. Såvel virksomheder, organisationer, foreninger og skoler er velkomne.</p><p>Du kan diskutere i små grupperum, høre efter i store auditorier eller udfolde dig fysisk på vores kunstgræsbane, i skoven, i idrætshallerne, styrketræningslokalet, den udendørs swimmingpool eller på vores beach volley baner.</p><p>På kursuscenteret kan du arbejde i et spændende og afslappet miljø med alle moderne kursusfaciliteter, og samtidig har centeret helt enestående faciliteter til et hav af forskellige fritidsaktiviteter. En perfekt og inspirerende ramme om såvel idrætslige som ikke-idrætslige arrangementer.</p><h2>Kursuscenter midt i Danmark</h2><p>Det tager ingen tid at komme til Vejle Idrætshøjskoles kursuscenter. Vi bor i et af landets smukkeste naturområder i Øst-/og Sydjylland, midt i skoven og alligevel kun 3 km fra Vejles rige kulturliv. Du kan gå, cykle eller løbe gennem Nørreskoven lige ned til Vejle Fjord. Med <a href="http://vih.dk/">idrætshøjskolens</a> pulserende liv som kulisse er kursuscenteret et aktivt alternativ til mere gængse kursuscentre.</p><h2>Teambuilding</h2><p>Vi har også tidligere haft stor succes med at lade vores teambuilderlinje afholde sports- og teambuildingsarrangementer for virksomheder, foreninger eller skoler. Kontakt <a href="mailto:kursuscenter@vih.dk">kursuscenter@vih.dk</a> for at høre mere.</p><h2>Samarbejdspartnere</h2><p>Af tidligere og nuværende kunder kan kort nævnes: DBU, DAI, DGI, DIF, DHF, Region Syddanmark, Vejle Kommune, Lions Club Vejle, Roskilde Handelsskole, FOF Vejle, Vejle Boldklub Kolding, KFUM's Idrætsforbund, Fertin Pharma, Sydbank Vejle og LEGO.</p></div></div></div>  </div>
-
-  
-  </div>
-<div class="panel-pane pane-fieldable-panels-pane pane-vid-24 pane-bundle-text pane-fpid-14"  >
-  
-        <h2 class="pane-title">
-      Kom og få en rundvisning    </h2>
-    
-  
-  <div class="pane-content">
-    <div class="fieldable-panels-pane">
-    <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Vi har ikke en decideret udlejningsbrochure, men ring til os og hør nærmere eller kig forbi. Kontakt os gerne og lav en aftale, så vi kan vise dig rundt på dette fantastiske og inspirerende sted.</p></div></div></div></div>
-  </div>
-
-  
-  </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div><!-- /.boxton -->
-  </div>
+<section class="diagonal alternate">
+	<div class="container halves">
+		<div>
+			<ul class="image-list">
+				<li><img src="{{ site.baseurl }}/images/cloudcannon-logo-blue.svg" width="250" style="margin-bottom: 40px;"></li>
+				<li><img src="{{ site.baseurl }}/images/jekyll-logo-black-red-transparent.png" width="300"></li>
+			</ul>
+		</div>
+		<div>
+			<h3 class="editable">Latest software, greatest perfomance</h3>
+			<p class="editable">As a new agency we get reap the benefits of the latest and greatest. We build our websites with the most up to date technology. This ensures your website is fast, efficient and reliable for many years.</p>
+		</div>
+	</div>
+</section>
